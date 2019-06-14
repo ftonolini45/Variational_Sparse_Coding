@@ -1,6 +1,6 @@
 # Variational Sparse Coding
 
-This repository contains codes and examples implementing the variational sparse coding model for sparse variational inference. The paper containing detailed information about the model will be soon made publicly available.
+This repository contains codes and examples implementing the variational sparse coding model for sparse variational inference. To run the code, you will need Python 3 and Tensorflow. The paper containing detailed information about the model will be soon made publicly available.
 
 # Code Instructions
 
