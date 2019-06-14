@@ -64,4 +64,4 @@ We provide two examples where this code is implemented to train VSC and subseque
 
 ## Sparse Artificial Dataset
 
-The sparse artificial dataset we use for our evaluation is included in the folder "Data_Sets/Smiley" along with the Matlab code used to generate it. This code is "make_smile_dataset.m" and can be found in "Data_Sets/Smiley/Generate_Smiley_Dataset". THis code can be used to generate different similar datasets with varying sparsity for the attributes (the datasets used in the paper and the example here are generated with a sparsity coefficient of 0.5).
+The sparse artificial dataset we use for our evaluation is included in the folder "Data_Sets/Smiley" along with the Matlab code used to generate it. This code is "make_smile_dataset.m" and can be found in "Data_Sets/Smiley/Generate_Smiley_Dataset". The code can be used to generate different datasets with varying sparsity for the attributes (the datasets used in the paper and the example here are generated with a sparsity coefficient of 0.5).
