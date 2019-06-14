@@ -15,7 +15,7 @@ num_iterations - Number of totl iterations
 
 initial_training_rate - Initial training rate for ADAM optimiser
 
-batch_size=500 - Batch size
+batch_size - Batch size
 
 report_interval - Interval of iterations at which to display and save values (ELBO, KL ecc.)
 
