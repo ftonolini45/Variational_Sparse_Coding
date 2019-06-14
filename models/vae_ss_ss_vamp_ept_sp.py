@@ -4,7 +4,7 @@ import tensorflow as tf
 import numpy as np
 import math as m
 
-from vae11 import vae_utils
+from models import vae_utils
 
 # based on implementation here:
 # https://github.com/tensorflow/models/blob/master/autoencoder/autoencoder_models/VariationalAutoencoder.py

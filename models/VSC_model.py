@@ -2,9 +2,9 @@ import numpy as np
 import tensorflow as tf
 import scipy.io as sio
 
-from vae11 import vae_ss_ss_vamp_ept_sp
-from vae11 import batch_manager
-from vae11 import logging_utils
+from models import vae_ss_ss_vamp_ept_sp
+from models import batch_manager
+from models import logging_utils
     
 def train(x_data_train,params,save_dir):
         
