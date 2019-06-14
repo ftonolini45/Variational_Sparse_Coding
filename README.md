@@ -1,8 +1,8 @@
 # Variational Sparse Coding
 
-This repository contains codes and examples implementing the variational sparse coding model for sparse variational inference. To run the code, you will need Python 3 and Tensorflow. The paper containing detailed information about the model will be soon made publicly available.
+This repository contains codes and examples implementing the variational sparse coding model for sparse variational inference. To run the code, you will need Python 3 and Tensorflow. The paper containing detailed information about the model will be made publicly available as soon as possible.
 
-# Code Instructions
+## Code Instructions
 
 The main code to implement the model is "VSC_model.py", in the folder "models". This code implements three functions:
 
@@ -58,6 +58,10 @@ Using the weights stored in "load_directory", this function encodes the samples 
 Using the weights stored in "load_directory", this function generates means "mu_x" and standard deviations "sig_x" from sparse latent variables "z". The parameters are given through the dictionary "parameters" as described above.
 
 
-# Examples
+## Examples
 
 We provide two examples where this code is implemented to train VSC and subsequently use it as a sparse encoder. The example "fashionMNIST_example.ipynb" trains the VSC model on examples from the fashion-MNIST dataset and visualises the average latent elements activation for each class in the data set. The example "Smiley_example.ipynb" trains the model on an artificial dataset generated with known source features in order to tesat disentanglement.
+
+## Sparse Artificial Dataset
+
+The sparse artificial dataset we use for our evaluation is included in the folder "Data_Sets/Smiley" along with the Matlab code used to generate it. This code is "make_smile_dataset.mat" and can be found in "Data_Sets/Smiley/Generate_Smiley_Dataset". THis code can be used to generate different similar datasets with varying sparsity for the attributes (the datasets used in the paper and the example here are generated with a sparsity coefficient of 0.5).
