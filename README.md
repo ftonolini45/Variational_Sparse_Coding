@@ -56,3 +56,8 @@ Using the weights stored in "load_directory", this function encodes the samples 
 3) mu_x, sig_x = VSC_model.decode(z,np.shape(test_data),parameters,load_directory)
 
 Using the weights stored in "load_directory", this function generates means "mu_x" and standard deviations "sig_x" from sparse latent variables "z". The parameters are given through the dictionary "parameters" as described above.
+
+
+# Examples
+
+We provide two examples where this code is implemented to train VSC and subsequently use it as a sparse encoder. The example "fashionMNIST_example.ipynb" trains the VSC model on examples from the fashion-MNIST dataset and visualises the average latent elements activation for each class in the data set. The example "Smiley_example.ipynb" trains the model on an artificial dataset generated with known source features in order to tesat disentanglement.
