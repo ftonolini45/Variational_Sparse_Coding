@@ -5,7 +5,7 @@ The main code to implement the model is "VSC_model.py", in the folder "models". 
 
 1) CF = VSC_model.train(training_data,parameters,save_directory)
 
-This function trains the weights of the VSC model on the data set "training_data", which is accepted as a 2D array, where samples are along dimension 0 and elements per sample along dimension 1. The trained weights are saved as a Tensorflow .ckpt file in the directory "save_directory". The model takes a number of parameters stored in a dictionary "parameters" which has to contain the following values:
+This function trains the weights of the VSC model on the data set \textbf{training_data}, which is accepted as a 2D array, where samples are along dimension 0 and elements per sample along dimension 1. The trained weights are saved as a Tensorflow .ckpt file in the directory "save_directory". The model takes a number of parameters stored in a dictionary "parameters" which has to contain the following values:
 
 num_iterations - Number of totl iterations
 initial_training_rate - Initial training rate for ADAM optimiser
