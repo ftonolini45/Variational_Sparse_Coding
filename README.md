@@ -7,7 +7,7 @@ This repository contains codes and examples implementing the variational sparse 
 The main code to implement the model is "VSC_model.py", in the folder "models". This code implements three functions:
 
 
-1) CF = VSC_model.train(training_data,parameters,save_directory)
+### 1) CF = VSC_model.train(training_data,parameters,save_directory)
 
 This function trains the weights of the VSC model on the data set "training_data", which is accepted as a 2D array, where samples are along dimension 0 and elements per sample along dimension 1. The trained weights are saved as a Tensorflow .ckpt file in the directory "save_directory". The model takes a number of parameters stored in a dictionary "parameters" which has to contain the following values:
 
@@ -48,12 +48,12 @@ reconstruction_likelihood - The average reconstruction likelihood for the data i
 aggregate_KL = The divergence between the average Spike probability value of the pseudo-inputs and the imposed sparsity alpha
 
 
-2) z, z_act = VSC_model.encode(test_data,parameters,load_directory)
+### 2) z, z_act = VSC_model.encode(test_data,parameters,load_directory)
 
 Using the weights stored in "load_directory", this function encodes the samples in "test_set", provided in the same format as "training_set" above. The input parameters are provided in the same way described above through the dictionary "parameters". The function returns two outputs: the encodede sparse latent variables "z" and the corresponding Spike values "z_act" (i.e. the binary activation of latent features).
 
 
-3) mu_x, sig_x = VSC_model.decode(z,np.shape(test_data),parameters,load_directory)
+### 3) mu_x, sig_x = VSC_model.decode(z,np.shape(test_data),parameters,load_directory)
 
 Using the weights stored in "load_directory", this function generates means "mu_x" and standard deviations "sig_x" from sparse latent variables "z". The parameters are given through the dictionary "parameters" as described above.
 
