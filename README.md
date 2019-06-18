@@ -53,7 +53,7 @@ aggregate_KL = The divergence between the average Spike probability value of the
 Using the weights stored in "load_directory", this function encodes the samples in "test_set", provided in the same format as "training_set" above. The input parameters are provided in the same way described above through the dictionary "parameters". The function returns two outputs: the encodede sparse latent variables "z" and the corresponding Spike values "z_act" (i.e. the binary activation of latent features).
 
 
-### 3) mu_x, sig_x = VSC_model.decode(z, np.shape(test_data), parameters, load_directory)
+### 3) mu_x, sig_x = VSC_model.decode(z, np.shape(training_data), parameters, load_directory)
 
 Using the weights stored in "load_directory", this function generates means "mu_x" and standard deviations "sig_x" from sparse latent variables "z". The parameters are given through the dictionary "parameters" as described above.
 
