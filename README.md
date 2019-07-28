@@ -3,11 +3,16 @@
 This repository contains codes and examples implementing the variational sparse coding model for sparse variational inference. To run the code, you will need Python 3 and Tensorflow. If you use this model or these codes, please cite our paper:
 
 @inproceedings{tonolini2019vsc,
+
   author    = {Francesco Tonolini and Bj\{o}rn Sand Jensen and Roderick Murray-Smith},
+
   title     = {Variational Sparse Coding},
+
   booktitle = {Proceedings of the Thirty-Fifth Conference on Uncertainty in Artificial Intelligence (UAI)},
-  year      = {2019} 
-  }
+
+  year      = {2019}
+
+}
 
 ## Code Instructions
 
